@@ -9,6 +9,18 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="inner-widht">
+            <a href="#home" class="webinarco">WEBINARCO | ADMIN</a>
+            <div class="navbar-menu">
+                <a href="#home">HOME</a>
+                <a href="#webinar">WEBINAR</a>
+                <a href="#about">ABOUT</a>
+                <a href="#logout">LOGOUT</a>
+            </div>
+        </div>
+    </nav>
 
 </body>
 
