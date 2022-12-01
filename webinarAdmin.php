@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    <!-- Content -->
+    <!-- Detail Webinar -->
     <section id="kelolawebinar">
         <div class="inner-widht">
             <div class="buttons">
