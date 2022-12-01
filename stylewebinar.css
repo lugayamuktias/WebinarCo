@@ -50,7 +50,7 @@
 
   #kelolawebinar .buttons {
     margin-top: 100px;
-    margin-left: 30px;
+    margin-left: 60px;
     width: fit-content;
     background-color: #ff8000;
   }
@@ -70,17 +70,17 @@
   
   #kelolawebinar .title {
     margin-top: 100px;
-    margin-left: 30px;
+    margin-left: 60px;
   }
   
   .detailwebinar {
     display: flex;
-    margin-left: 30px;
+    margin-left: 60px;
     margin-top: 20px;
   }
   
   .webinars .picwebinar {
-    width: 390px;
+    width: 500px;
     border-radius: 5px;
     margin-bottom: 20px;
     color: #fff;
@@ -90,7 +90,7 @@
   
   .webinars p {
     display: block;
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 6px;
     margin-right: 15px;
   }
