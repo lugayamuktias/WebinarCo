@@ -1,0 +1,49 @@
+/* Body */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    background-color: #222222;
+    width: 100%;
+    padding: 20px 0;
+    top: 0;
+    z-index: 999;
+    transition: 0.3s linear;
+  }
+  
+  .inner-widht {
+    max-width: 1300px;
+    padding: 0 40px;
+  }
+  
+  .navbar .inner-widht {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .webinarco {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+  }
+  
+  .navbar-menu a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.2s linear;
+  }
+  
+  .navbar-menu a:hover {
+    color: #ff8000 !important;
+  }
