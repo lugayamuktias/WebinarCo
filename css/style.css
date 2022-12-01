@@ -1,0 +1,148 @@
+* {
+	padding:0;
+	margin:0;
+	font-family: sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.container {
+	width:80%;
+	margin:0 auto;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+.nav2{
+	margin: 0;
+	text-align: center;
+	font-family: fantasy;
+	width: 83%;
+	font-size: 20px;
+}
+.nav2 ul{
+	background: #000000;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	width: 100%;
+	padding: 0 130px;
+}
+.nav2 ul li{
+	float: left;
+}
+.nav2 ul li:hover{
+	background: #000000;
+}
+.nav2 ul li a:hover{
+	color: 	#000000;
+}
+.nav2 ul li a{
+	display: block;
+	padding: 20px;
+	color: 	#000000;
+	text-decoration: none;
+}
+.nav2 ul li .dropdown{
+	display: none;
+}
+.nav2 ul li:hover .dropdown{
+	display: block;
+	background:black;
+	position: absolute;
+	padding: 0;
+	color: 	#000000;
+}
+.menu ul li:hover .dropdown li{
+	display:block;
+}
+.menu ul li:hover .dropdown li a{
+	padding: 0 20px;
+	margin: 0 auto;
+	color: 	#000000;
+}
+.menu ul li:hover .dropdown li a:hover{
+	background: #ff0808;
+	box-shadow: inset 0px 0px 5px #000;
+}
+header h1 {
+	float: left;
+	padding:5px 0;
+	color: rgb(0, 0, 71);
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+header ul li a:hover {
+	background-color: rgb(0, 0, 71);
+	color: #fff;
+}
+.active {
+	background-color: rgb(0, 0, 71);
+	color: #fff;
+}
+.banner {
+	height: 100vh;
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 35, 0.7)
+}
+.banner h2 {
+	color: #ffffff;
+	z-index: 1;
+	padding: 60px 25px;
+}
+
+section {
+	padding:50px 0;
+}
+section h2 {
+	width:80%;
+	margin:0 auto;
+	font-size: 90px;
+	text-align: left;
+	padding:20px 0;
+	color: #000000;
+	margin-bottom: 25px;
+}
+
+section h3 {
+	width:80%;
+	margin:0 auto;
+	font-size: 90px;
+	text-align: left;
+	padding:20px 0;
+	color: #000000;
+	margin-bottom: 25px;
+}
+
+footer {
+	padding:30px 0;
+	background-color: #000000;
+	color: #fff;
+	text-align: center;
+}
