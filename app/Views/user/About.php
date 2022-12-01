@@ -29,23 +29,23 @@
         <div class="photo-about">
             <ul class="photo">
                 <li>
-                    <img src="img/default1.jpg">
+                    <img src="/img/default1.jpg">
                     <span>Irfan Maulana C.<br>3411171018</span>
                 </li>
                 <li>
-                    <img src="img/default1.jpg">
+                    <img src="/img/default1.jpg">
                     <span>Gheral Naza G.<br>3411201003</span>
                 </li>
                 <li>
-                    <img src="img/default1.jpg">
+                    <img src="/img/default1.jpg">
                     <span>Irgo Satura P.S.<br>3411201010</span>
                 </li>
                 <li>
-                    <img src="img/default1.jpg">
+                    <img src="/img/default1.jpg">
                     <span>Setyo Arie A.<br>3411201022</span>
                 </li>
                 <li>
-                    <img src="img/Foto-Lugaya.jpg">
+                    <img src="/img/Foto-Lugaya.jpg">
                     <span>Lugaya Mukti A.<br>3411201025</span>
                 </li>
                 <div class="clear"></div>
