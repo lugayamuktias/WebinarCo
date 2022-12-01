@@ -42,6 +42,8 @@ $routes->get('auth/register', 'Home::register');
 $routes->get('admin/homeadmin', 'Home::admin');
 $routes->get('user/homeuser', 'Home::user');
 $routes->get('guest/homeguest', 'Home::guest');
+
+
 $routes->get('admin/webinaradmin', 'Webinar::admin');
 $routes->get('user/webinaruser', 'Webinar::user');
 $routes->get('guest/webinarguest', 'Webinar::guest');

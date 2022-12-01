@@ -14,6 +14,7 @@
 	<div class="bg-loader">
 		<div class="loader"></div>
 	</div>
+
 	<!-- header -->
 	<header>
 		<div class="container">
@@ -26,10 +27,12 @@
 			</ul>
 		</div>
 	</header>
+
 	<!-- banner -->
 	<section class="banner">
 		<h2>SELAMAT DATANG DI WEBINARCO, ADMIN!</h2>
 	</section>
+
 	<!-- about -->
 	<section class="Webinar">
 		<div class="container">
