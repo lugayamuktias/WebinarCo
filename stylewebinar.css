@@ -30,8 +30,7 @@
   .webinarco {
     color: #fff;
     font-size: 20px;
-    font-weight: 500;
-    margin-left: 30px;
+    margin: 0px 30px;
   }
   
   .navbar-menu a {
@@ -61,14 +60,34 @@
     width: 180px;
     border: 1px solid #ff8000;
     border-radius: 2px;
-    transition: 0.2s linear;
     text-align-last: center;
-    background-color: transparent;
   }
   
   #kelolawebinar .title {
     margin-top: 100px;
     margin-left: 60px;
+  }
+
+  #kelolawebinar .buttons2 {
+    margin-top: 30px;
+  }
+  
+  #kelolawebinar .buttons2 a {
+    display: inline-block;
+    text-align: center;
+    margin: 15px 30px;
+    color: #ff8000;
+    font-size: 18px;
+    width: 180px;
+    border: 1px solid #ff8000;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear
+  }
+
+  #kelolawebinar .buttons2 a:hover{
+    background-color: #ff8000;
+    color: #fff;
   }
   
   .detailwebinar {
@@ -92,10 +111,6 @@
     margin-bottom: 6px;
     margin-right: 15px;
   }
-  
-  .webinars:hover {
-    background-color: #ff8000;
-  }
 
   footer{
     background-color: #222222;
@@ -106,7 +121,6 @@
   }
 
   .copyright{
-    margin-bottom: 20px;
     font-size: 15px;
   }
 
