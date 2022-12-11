@@ -39,8 +39,11 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
-                    <BUtton><a href="/" class="crudwebinar">Edit Webinar</a></BUtton>
-                    <BUtton><a href="/" class="crudwebinar">Hapus Webinar</a></BUtton>
+
+                    <div class="buttons2">
+                        <a href="#"><strong>Edit Webinar</strong></a>
+                        <a href="#"><strong>Hapus Webinar</strong></a>
+                    </div>
                 </div>
 
                 <div class="webinars">
@@ -49,8 +52,10 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
-                    <BUtton><a href="/" class="crudwebinar">Edit Webinar</a></BUtton>
-                    <BUtton><a href="/" class="crudwebinar">Hapus Webinar</a></BUtton>
+                    <div class="buttons2">
+                        <a href="#"><strong>Edit Webinar</strong></a>
+                        <a href="#"><strong>Hapus Webinar</strong></a>
+                    </div>
                 </div>
 
                 <div class="webinars">
@@ -59,8 +64,10 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
-                    <BUtton><a href="/" class="crudwebinar">Edit Webinar</a></BUtton>
-                    <BUtton><a href="/" class="crudwebinar">Hapus Webinar</a></BUtton>
+                    <div class="buttons2">
+                        <a href="#"><strong>Edit Webinar</strong></a>
+                        <a href="#"><strong>Hapus Webinar</strong></a>
+                    </div>
                 </div>
             </div>
         </div>
