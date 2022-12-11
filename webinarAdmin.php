@@ -30,7 +30,7 @@
     <section id="kelolawebinar">
         <div class="inner-widht">
             <div class="buttons">
-                <a href="#addwebianr">
+                <a href="formTambahWebinar.php">
                     <h3>+ADD WEBINAR</h3>
                 </a>
             </div>
