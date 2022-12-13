@@ -43,7 +43,7 @@
                         necessitatibus amet. Alias!</p>
 
                     <div class="buttons2">
-                        <a href="#"><strong>Edit Webinar</strong></a>
+                        <a href="formEditWebinar.php"><strong>Edit Webinar</strong></a>
                         <a href="#"><strong>Hapus Webinar</strong></a>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
                     <div class="buttons2">
-                        <a href="#"><strong>Edit Webinar</strong></a>
+                        <a href="formEditWebinar.php"><strong>Edit Webinar</strong></a>
                         <a href="#"><strong>Hapus Webinar</strong></a>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
                     <div class="buttons2">
-                        <a href="#"><strong>Edit Webinar</strong></a>
+                        <a href="formEditWebinar.php"><strong>Edit Webinar</strong></a>
                         <a href="#"><strong>Hapus Webinar</strong></a>
                     </div>
                 </div>
