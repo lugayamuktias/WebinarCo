@@ -37,7 +37,7 @@
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
                     <div class="buttons2">
-                        <a href="#"><strong>Daftar Webinar</strong></a>
+                        <a href="formDaftarUser.php"><strong>Daftar Webinar</strong></a>
                     </div>
                 </div>
 
@@ -48,7 +48,7 @@
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
                     <div class="buttons2">
-                        <a href="#"><strong>Daftar Webinar</strong></a>
+                        <a href="formDaftarUser.php"><strong>Daftar Webinar</strong></a>
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
                     <div class="buttons2">
-                        <a href="#"><strong>Daftar Webinar</strong></a>
+                        <a href="formDaftarUser.php"><strong>Daftar Webinar</strong></a>
                     </div>
                 </div>
             </div>
