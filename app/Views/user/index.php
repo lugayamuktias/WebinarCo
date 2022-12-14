@@ -20,9 +20,9 @@
 			<h1><a href="<?= base_url();?>home.html">WEBINARCO</a></h1>
 			<ul>
 				<li class="active"><a href="home.html">HOME</a></li>
-				<li><a href="<?= base_url();?>Webinar.html">Webinar</a></li>
+				<li><a href="<?= base_url('user/webinaruser');?>">Webinar</a></li>
 				<li><a href="<?= base_url();?>about.html">ABOUT</a></li>
-				<li><a href="<?= base_url();?>sign in.html">Sign in</a></li>
+				<li><a href="<?= base_url('logout');?>">Sign in</a></li>
 			</ul>
 		</div>
 	</header>

@@ -2,8 +2,15 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
-{
+class Home extends BaseController{
+    public function index()
+    {
+        $data = [
+            'title'  => 'Register',
+            'config' => config('Auth'),
+        ];
+        return view('auth/login', $data);
+    }
     public function login()
     {
         return view('auth/login');

@@ -18,7 +18,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
-$routes->setDefaultMethod('login');
+$routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->setAutoRoute(true);
 $routes->set404Override();
@@ -36,7 +36,8 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::login');
+$routes->get('/', 'User::index');
+$routes->get('/', 'User::webinaruser');
 $routes->get('auth/login', 'Home::login');
 $routes->get('auth/register', 'Home::register');
 $routes->get('admin/homeadmin', 'Home::admin');
@@ -45,7 +46,7 @@ $routes->get('guest/homeguest', 'Home::guest');
 
 
 $routes->get('admin/webinaradmin', 'Webinar::admin');
-$routes->get('user/webinaruser', 'Webinar::user');
+
 $routes->get('guest/webinarguest', 'Webinar::guest');
 $routes->get('admin/about', 'About::admin');
 $routes->get('user/about', 'About::user');
