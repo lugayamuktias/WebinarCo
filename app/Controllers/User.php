@@ -11,4 +11,12 @@ class User extends BaseController{
     {
         return view('user/webinaruser');
     }
+     public function aboutuser()
+    {
+        return view('user/About');
+    }
+    public function daftaruser()
+    {
+        return view('user/formDaftarUser');
+    }
 }

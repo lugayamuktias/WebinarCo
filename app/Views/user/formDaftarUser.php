@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="stylewebinar.css">
+    <link rel="stylesheet" href="/css/stylewebinar.css">
     <title>WebinarCo</title>
 </head>
 
@@ -14,12 +14,12 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="inner-widht">
-            <a href="#home" class="webinarco">WEBINARCO</a>
+            <a href="<?= base_url('user/index');?>"class="webinarco">WEBINARCO</a>
             <div class="navbar-menu">
-                <a href="#home">HOME</a>
-                <a href="#webinar">WEBINAR</a>
-                <a href="#about">ABOUT</a>
-                <a href="#logout">LOGOUT</a>
+                <a href="<?= base_url('user/index');?>">HOME</a>
+                <a href="<?= base_url('user/webinaruser');?>">WEBINAR</a>
+                <a href="<?= base_url('user/aboutuser');?>">ABOUT</a>
+                <a href="<?= base_url('logout');?>">LOGOUT</a>
             </div>
         </div>
     </nav>
@@ -85,7 +85,7 @@
             </div>
 
             <div class="btn">
-                <a href="webinarUser.php"><strong>Back</strong></a>
+                <a href="<?= base_url('user/webinaruser');?>"><strong>Back</strong></a>
                 <a href="#"><strong>Daftar Webinar</strong></a>
             </div>
         </div>

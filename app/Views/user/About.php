@@ -5,8 +5,7 @@
     <title>About</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <link rel="Stylesheet" type="text/css" href="About.css">
-
+    <link rel="Stylesheet" type="text/css" href="/css/About.css">
 <body>
     <section>
         <nav class="navbar">
@@ -15,15 +14,14 @@
                     <a href="#">WEBINARCO</a>
                 </div>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">WEBINAR</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">LOGOUT</a></li>
+                <li><a href="<?= base_url('user/index');?>">HOME</a></li>
+                <li><a href="<?= base_url('user/webinaruser');?>">WEBINAR</a></li>
+                <li><a href="<?= base_url('user/aboutuser');?>">ABOUT</a></li>
+				<li><a href="<?= base_url('logout');?>">LOGOUT</a></li>
                 </ul>
             </div>
         </nav>
     </section>
-
     <section class="container">
         <h1>THIS IS US!</h1>
         <div class="photo-about">
@@ -52,6 +50,10 @@
             </ul>
         </div>
     </section>
+    <footer>
+        <div class="copyright">
+            &copy; 2022 | Created & Designed By <a href="#">WebinarCo</a>
+        </div>
+    </footer>
 </body>
-
 </html>

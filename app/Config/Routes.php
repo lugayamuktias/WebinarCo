@@ -38,6 +38,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'User::index');
 $routes->get('/', 'User::webinaruser');
+$routes->get('/', 'User::aboutuser');
+$routes->get('/', 'User::DaftarUser');
 $routes->get('auth/login', 'Home::login');
 $routes->get('auth/register', 'Home::register');
 $routes->get('admin/homeadmin', 'Home::admin');
@@ -49,7 +51,6 @@ $routes->get('admin/webinaradmin', 'Webinar::admin');
 
 $routes->get('guest/webinarguest', 'Webinar::guest');
 $routes->get('admin/about', 'About::admin');
-$routes->get('user/about', 'About::user');
 $routes->get('guest/about', 'About::guest');
 /*
  * --------------------------------------------------------------------
