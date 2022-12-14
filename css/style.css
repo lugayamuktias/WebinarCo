@@ -1,92 +1,96 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
+	padding:0;
+	margin:0;
+	font-family: sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
-.clear {
-  clear: both;
+.container {
+	width:80%;
+	margin:0 auto;
 }
-
-.navbar {
-  position: static;
-  left: 0;
-  top: 0;
-  width: 100%;
-  padding: 20px;
-  background: #222222;
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
 }
-
-.nav-content {
-  display: flex;
-  height: 100%;
-  max-width: 1200px;
-  margin: auto;
-  align-items: center;
-  justify-content: space-between;
+.nav2{
+	margin: 0;
+	text-align: center;
+	font-family: fantasy;
+	width: 83%;
+	font-size: 20px;
 }
-
-.logo a {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 500;
+.nav2 ul{
+	background: #000000;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	width: 100%;
+	padding: 0 130px;
 }
-
-.nav-content ul {
-  display: flex;
-  align-items: center;
+.nav2 ul li{
+	float: left;
 }
-
-.nav-content ul li {
-  list-style: none;
-  margin: 0 10px;
+.nav2 ul li:hover{
+	background: #000000;
 }
-
-.nav-content ul li a {
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  padding: 10px 4px;
-  transition: 0.2s linear;
+.nav2 ul li a:hover{
+	color: 	#000000;
 }
-
-.nav-content ul li a:hover {
-  color: #ff8000 !important;
+.nav2 ul li a{
+	display: block;
+	padding: 20px;
+	color: 	#000000;
+	text-decoration: none;
 }
-
-body {
-  background-color: #3c4048;
+.nav2 ul li .dropdown{
+	display: none;
 }
-
-.container h1 {
-  text-align: center;
-  margin: 30px 0;
-  color: #fff;
-  font-size: 35px;
+.nav2 ul li:hover .dropdown{
+	display: block;
+	background:black;
+	position: absolute;
+	padding: 0;
+	color: 	#000000;
 }
-
-footer {
-  background-color: #222222;
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin-top: 300px;
-  padding: 30px 0;
-  text-align: center;
+.menu ul li:hover .dropdown li{
+	display:block;
 }
-
-.copyright {
-  margin-bottom: 20px;
-  font-size: 15px;
+.menu ul li:hover .dropdown li a{
+	padding: 0 20px;
+	margin: 0 auto;
+	color: 	#000000;
 }
-
-.copyright a {
-  font-size: 16px;
-  color: #ff8000;
-  font-weight: 500;
+.menu ul li:hover .dropdown li a:hover{
+	background: #ff0808;
+	box-shadow: inset 0px 0px 5px #000;
+}
+header h1 {
+	float: left;
+	padding:5px 0;
+	color: rgb(0, 0, 71);
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+header ul li a:hover {
+	background-color: rgb(0, 0, 71);
+	color: #fff;
+}
+.active {
+	background-color: rgb(0, 0, 71);
+	color: #fff;
 }
 
 .banner {
@@ -115,6 +119,8 @@ footer {
 }
 
 section {
+	padding:50px 0;
+
 }
 section h2 {
 	width:80%;

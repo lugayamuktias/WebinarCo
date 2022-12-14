@@ -10,31 +10,40 @@
 	<script src="<?= base_url();?>https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 <body>
-	<!-- loader -->
-	<div class="bg-loader">
-		<div class="loader"></div>
-	</div>
-	<!-- header -->
-	<header>
-		<div class="container">
-			<h1><a href="<?= base_url();?>home.html">WEBINARCO</a></h1>
-			<ul>
-				<li class="active"><a href="home.html">HOME</a></li>
-				<li><a href="<?= base_url();?>Webinar.html">Webinar</a></li>
-				<li><a href="<?= base_url();?>about.html">ABOUT</a></li>
-				<li><a href="<?= base_url();?>sign in.html">Sign in</a></li>
-			</ul>
-		</div>
-	</header>
+ <section>
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#">WEBINARCO</a>
+                </div>
+                <ul>
+				<li class="active"><a href="<?= base_url('user/index');?>">HOME</a></li>
+				<li><a href="<?= base_url('user/webinaruser');?>">WEBINAR</a></li>
+				<li><a href="<?= base_url('user/aboutuser');?>">ABOUT</a></li>
+				<li><a href="<?= base_url('logout');?>">LOGOUT</a></li>
+			 </ul>
+            </div>
+        </nav>
+    </section>
+
 	<!-- banner -->
 	<section class="banner">
 		<h2>SELAMAT DATANG DI WEBINARCO, USER!</h2>
 	</section>
+
 	<!-- about -->
 	<section class="Webinar">
 		<div class="container">
 		</div>
 	</section>
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<small>Copyright &copy; 2022 - Team 3</small>
+		</div>
+	</footer>
+
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".bg-loader").hide();
