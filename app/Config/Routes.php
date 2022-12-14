@@ -48,9 +48,9 @@ $routes->get('guest/homeguest', 'Home::guest');
 
 
 $routes->get('admin/webinaradmin', 'Webinar::admin');
-
 $routes->get('guest/webinarguest', 'Webinar::guest');
 $routes->get('admin/about', 'About::admin');
+
 $routes->get('guest/about', 'About::guest');
 /*
  * --------------------------------------------------------------------
