@@ -52,6 +52,12 @@
             </ul>
         </div>
     </section>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2022 | Created & Designed By <a href="#">WebinarCo</a>
+        </div>
+    </footer>
 </body>
 
 </html>
