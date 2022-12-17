@@ -15,9 +15,9 @@
         <div class="inner-widht">
             <a href="#home" class="webinarco">WEBINARCO</a>
             <div class="navbar-menu">
-                <a href="<?= base_url('user/index');?>">HOME</a>
-                <a href="<?= base_url('user/webinaruser');?>">WEBINAR</a>
-                <a href="<?= base_url('user/aboutuser');?>">ABOUT</a>
+				<a class="active"><a href="<?= base_url('login/index');?>">HOME</a>
+				<a href="<?= base_url('peserta/webinarpeserta');?>">WEBINAR</a>
+				<a href="<?= base_url('peserta/aboutpeserta');?>">ABOUT</a>
 				<a href="<?= base_url('logout');?>">LOGOUT</a>
             </div>
         </div>
@@ -37,7 +37,7 @@
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
                     <div class="buttons2">
-                        <a href="<?= base_url('user/DaftarUser');?>"><strong>Daftar Webinar</strong></a>
+                        <a href="<?= base_url('peserta/daftarpeserta');?>"><strong>Daftar Webinar</strong></a>
                     </div>
                 </div>
 
@@ -48,7 +48,7 @@
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
                     <div class="buttons2">
-                        <a href="<?= base_url('user/DaftarUser');?>"><strong>Daftar Webinar</strong></a>
+                        <a href="<?= base_url('peserta/daftarpeserta');?>"><strong>Daftar Webinar</strong></a>
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
                     <div class="buttons2">
-                        <a href="<?= base_url('user/DaftarUser');?>"><strong>Daftar Webinar</strong></a>
+                        <a href="<?= base_url('peserta/daftarpeserta');?>"><strong>Daftar Webinar</strong></a>
                     </div>
                 </div>
             </div>

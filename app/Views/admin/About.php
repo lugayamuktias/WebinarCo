@@ -1,3 +1,4 @@
+<?php if(in_groups('admin')) :?>
 <!DOCTYPE html>
 <html>
 
@@ -15,17 +16,19 @@
                     <a href="<?= base_url();?>/#">WEBINARCO</a>
                 </div>
                 <ul>
-                    <li><a href="<?= base_url();?>/#">HOME</a></li>
-                    <li><a href="<?= base_url();?>/#">WEBINAR</a></li>
-                    <li><a href="<?= base_url();?>/#">ABOUT</a></li>
-                    <li><a href="<?= base_url();?>/#">LOGOUT</a></li>
+				<li class="active"><a href="<?= base_url('login/index');?>">HOME</a></li>
+				<li><a href="<?= base_url('admin/webinaradmin');?>">WEBINAR</a></li>
+				<li><a href="<?= base_url('admin/aboutadmin');?>">ABOUT</a></li>
+				<li><a href="<?= base_url('logout');?>">LOGOUT</a></li>
                 </ul>
             </div>
         </nav>
     </section>
 
     <section class="container">
-        <h1>THIS IS US!</h1>
+
+        <h1>OUR WEBINARCO TEAM!</h1>
+
         <div class="photo-about">
             <ul class="photo">
                 <li>
@@ -52,6 +55,8 @@
             </ul>
         </div>
     </section>
+
 </body>
 
 </html>
+<?php endif; ?>
