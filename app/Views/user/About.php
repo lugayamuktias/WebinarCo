@@ -16,18 +16,21 @@
                     <a href="#">WEBINARCO</a>
                 </div>
                 <ul>
-
-                <li><a href="<?= base_url('user/index');?>">HOME</a></li>
-                <li><a href="<?= base_url('user/webinaruser');?>">WEBINAR</a></li>
-                <li><a href="<?= base_url('user/aboutuser');?>">ABOUT</a></li>
+				<li class="active"><a href="<?= base_url('login/index');?>">HOME</a></li>
+				<li><a href="<?= base_url('peserta/webinarpeserta');?>">WEBINAR</a></li>
+				<li><a href="<?= base_url('peserta/aboutpeserta');?>">ABOUT</a></li>
 				<li><a href="<?= base_url('logout');?>">LOGOUT</a></li>
 
                 </ul>
             </div>
         </nav>
     </section>
+    <?php if(in_groups('user')) :?>
     <section class="container">
-        <h1>THIS IS US!</h1>
+        
+        <h1>WEBINARCO TEAM!</h1>
+    
+    <?php endif; ?>
         <div class="photo-about">
             <ul class="photo">
                 <li>

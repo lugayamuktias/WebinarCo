@@ -17,7 +17,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('login');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->setAutoRoute(true);
@@ -36,22 +36,26 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'User::index');
-$routes->get('/', 'User::webinaruser');
-$routes->get('/', 'User::aboutuser');
-$routes->get('/', 'User::DaftarUser');
-$routes->get('auth/login', 'Home::login');
-$routes->get('auth/register', 'Home::register');
-$routes->get('admin/homeadmin', 'Home::admin');
-$routes->get('user/homeuser', 'Home::user');
-$routes->get('guest/homeguest', 'Home::guest');
-
-
-$routes->get('admin/webinaradmin', 'Webinar::admin');
-$routes->get('guest/webinarguest', 'Webinar::guest');
-$routes->get('admin/about', 'About::admin');
-
-$routes->get('guest/about', 'About::guest');
+$routes->get('/', 'login::index');
+$routes->get('/admin', 'admin::index', ['filter' => 'role:admin']);
+$routes->get('/admin/index', 'admin::index', ['filter' => 'role:admin']);
+$routes->get('/admin', 'admin::aboutadmin', ['filter' => 'role:admin']);
+$routes->get('/admin/about', 'admin::aboutadmin', ['filter' => 'role:admin']);
+$routes->get('/admin', 'admin::webinaradmin', ['filter' => 'role:admin']);
+$routes->get('/admin/webinaradmin', 'admin::webinaradmin', ['filter' => 'role:admin']);
+$routes->get('/admin', 'admin::webinaradmin', ['filter' => 'role:admin']);
+$routes->get('/admin/formtambahwebinar', 'event::TambahWebinar', ['filter' => 'role:admin']);
+$routes->get('/admin', 'admin::webinaradmin', ['filter' => 'role:admin']);
+$routes->get('/admin/formeditwebinar', 'admin::EditWebinar', ['filter' => 'role:admin']);
+$routes->get('/admin', 'admin::webinaradmin', ['filter' => 'role:admin']);
+$routes->get('/admin/hapuswebinar', 'admin::HapusWebinar', ['filter' => 'role:admin']);
+$routes->get('/', 'peserta::webinarpeserta');
+$routes->get('/', 'peserta::aboutpeserta');
+$routes->get('/', 'peserta::daftarpeserta');
+$routes->get('auth/login', 'login::login');
+$routes->get('auth/register', 'login::register');
+$routes->get('admin', 'admin::webinaradmin', ['filter' => 'role:admin']);
+$routes->get('admin', 'admin::about', ['filter' => 'role:admin']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

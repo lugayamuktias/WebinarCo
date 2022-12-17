@@ -16,10 +16,10 @@
         <div class="inner-widht">
             <a href="<?= base_url('user/index');?>"class="webinarco">WEBINARCO</a>
             <div class="navbar-menu">
-                <a href="<?= base_url('user/index');?>">HOME</a>
-                <a href="<?= base_url('user/webinaruser');?>">WEBINAR</a>
-                <a href="<?= base_url('user/aboutuser');?>">ABOUT</a>
-                <a href="<?= base_url('logout');?>">LOGOUT</a>
+				<a class="active"><a href="<?= base_url('login/index');?>">HOME</a>
+				<a href="<?= base_url('peserta/webinarpeserta');?>">WEBINAR</a>
+				<a href="<?= base_url('peserta/aboutpeserta');?>">ABOUT</a>
+				<a href="<?= base_url('logout');?>">LOGOUT</a>
             </div>
         </div>
     </nav>

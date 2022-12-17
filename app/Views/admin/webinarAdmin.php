@@ -1,3 +1,4 @@
+<?php if(in_groups('admin')) :?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,11 +20,11 @@
 
             <a href="<?= base_url();?>/#home" class="webinarco">WEBINARCO | ADMIN</a>
             <div class="navbar-menu">
-                <a href="<?= base_url();?>/#home">HOME</a>
-                <a href="<?= base_url();?>/#webinar">WEBINAR</a>
-                <a href="<?= base_url();?>/#about">ABOUT</a>
-                <a href="<?= base_url();?>/#logout">LOGOUT</a>
->>>>>>> master
+                <a class="active"><a href="<?= base_url('login/index');?>">HOME</a>
+                <a href="<?= base_url('admin/webinaradmin');?>">WEBINAR</a>
+                <a href="<?= base_url('admin/aboutadmin');?>">ABOUT</a>
+                <a href="<?= base_url('logout');?>">LOGOUT</a>
+
             </div>
         </div>
     </nav>
@@ -32,29 +33,25 @@
     <section id="kelolawebinar">
         <div class="inner-widht">
             <div class="buttons">
-
-                <a href="<?= base_url();?>/#addwebinar">
-                    <h3>+ADD WEBINAR</h3>
-                </a>
+                <a href="<?= base_url('event/TambahWebinar');?>"><h3>+ADD WEBINAR</h3></a>
             </div>
             <div class="detailwebinar">
                 <div class="webinars">
-
-                    <a href="<?= base_url();?>//"></a><img src="/img/webinar2.jpg" alt="" class="picwebinar"></a>
-
+                    <a href="/"></a><img src="/img/webinar2.jpg" alt="" class="picwebinar"></a>
                     <h4>Webinar 1</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
                         necessitatibus amet. Alias!</p>
 
                     <div class="buttons2">
-                        <a href="formEditWebinar.php"><strong>Edit Webinar</strong></a>
-                        <a href="#"><strong>Hapus Webinar</strong></a>
+                        <a href="<?= base_url('event/EditWebinar');?>">Edit Webinar</strong></a>
+                        <a href="<?= base_url('event/HapusWebinar');?>">Hapus Webinar</strong></a>
                     </div>
                 </div>
 
                 <div class="webinars">
-                    <a href="/"><img src="image/webinar2.jpg" alt="" class="picwebinar"></a>
+
+                    <a href="/"><img src="/img/webinar2.jpg" alt="" class="picwebinar"></a>
 
                     <h4>Webinar 2</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
@@ -62,13 +59,13 @@
                         necessitatibus amet. Alias!</p>
 
                     <div class="buttons2">
-                        <a href="formEditWebinar.php"><strong>Edit Webinar</strong></a>
-                        <a href="#"><strong>Hapus Webinar</strong></a>
+                        <a href="<?= base_url('event/EditWebinar');?>">Edit Webinar</strong></a>
+                        <a href="<?= base_url('event/HapusWebinar');?>">Hapus Webinar</strong></a>
                     </div>
                 </div>
 
                 <div class="webinars">
-                    <a href="/"><img src="image/webinar2.jpg" alt="" class="picwebinar"></a>
+                    <a href="/"><img src="/img/webinar2.jpg" alt="" class="picwebinar"></a>
 
                     <h4>Webinar 3</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
@@ -76,8 +73,8 @@
                         necessitatibus amet. Alias!</p>
 
                     <div class="buttons2">
-                        <a href="formEditWebinar.php"><strong>Edit Webinar</strong></a>
-                        <a href="#"><strong>Hapus Webinar</strong></a>
+                        <a href="<?= base_url('event/EditWebinar');?>">Edit Webinar</strong></a>
+                        <a href="<?= base_url('event/HapusWebinar');?>">Hapus Webinar</strong></a>
                     </div>
 
                 </div>
@@ -99,3 +96,4 @@
 </body>
 
 </html>
+    <?php endif; ?>
