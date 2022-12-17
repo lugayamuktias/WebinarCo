@@ -56,7 +56,6 @@ $routes->get('auth/login', 'login::login');
 $routes->get('auth/register', 'login::register');
 $routes->get('admin', 'admin::webinaradmin', ['filter' => 'role:admin']);
 $routes->get('admin', 'admin::about', ['filter' => 'role:admin']);
-
 /*
  * --------------------------------------------------------------------
  * Additional Routing

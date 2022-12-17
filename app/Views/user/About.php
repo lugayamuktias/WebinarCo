@@ -5,7 +5,9 @@
     <title>About</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1">
+
     <link rel="Stylesheet" type="text/css" href="/css/About.css">
+
 <body>
     <section>
         <nav class="navbar">
@@ -18,6 +20,7 @@
 				<li><a href="<?= base_url('peserta/webinarpeserta');?>">WEBINAR</a></li>
 				<li><a href="<?= base_url('peserta/aboutpeserta');?>">ABOUT</a></li>
 				<li><a href="<?= base_url('logout');?>">LOGOUT</a></li>
+
                 </ul>
             </div>
         </nav>
@@ -61,4 +64,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    position: fixed;
+    background-color: #222222;
+    width: 100%;
+    padding: 30px 30px;
+    top: 0;
+    z-index: 999;
+    transition: 0.3s linear;
+  }
+  
+  .inner-widht {
+    max-width: 1750px;
+    padding: 0 50px;
+  }
+  
+  .navbar .inner-widht {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .webinarco {
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 30px;
+  }
+  
+  .navbar-menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.2s linear;
+  }
+  
+  .navbar-menu a:hover {
+    color: #ff8000 !important;
+  }
+
+  #kelolawebinar .buttons {
+    margin-top: 100px;
+    margin-left: 60px;
+    width: fit-content;
+    background-color: #ff8000;
+  }
+  
+  #kelolawebinar .buttons a {
+    display: inline-block;
+    margin: 15px 5px;
+    color: black;
+    font-size: 15px;
+    width: 180px;
+    border: 1px solid #ff8000;
+    border-radius: 2px;
+    text-align-last: center;
+  }
+  
+  #kelolawebinar .title {
+    margin-top: 100px;
+    margin-left: 60px;
+  }
+
+  #kelolawebinar .buttons2 {
+    margin-top: 30px;
+  }
+  
+  #kelolawebinar .buttons2 a {
+    display: inline-block;
+    text-align: center;
+    margin: 15px 20px;
+    color: #ff8000;
+    font-size: 18px;
+    width: 180px;
+    border: 1px solid #ff8000;
+    padding: 12px 0;
+    border-radius: 6px;
+    transition: .2s linear
+  }
+
+  #kelolawebinar .buttons2 a:hover{
+    background-color: #ff8000;
+    color: #fff;
+  }
+  
+  .detailwebinar {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+  
+  .webinars .picwebinar {
+    width: 500px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  
+  .webinars p {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 6px;
+    margin-right: 15px;
+  }
+
+  .formWebinar{
+    width: 100%;
+    max-width: 900px;
+    background: #F5F5F5;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    color: #222222;
+  }
+
+  .formWebinar h1{
+    margin-top: 0;
+    font-weight: 200;
+  }
+
+  .formWebinar .column{
+    display: flex;
+    column-gap: 22px;
+  }
+
+  .txtb{
+    border:1px solid #222222;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+  }
+
+  .txtb label{
+    display: block;
+    text-align: left;
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .txtb input{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+    color: #222222;
+  }
+
+  .btn a{
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    margin: 15px 20px;
+    color: #222222;
+    font-size: 18px;
+    width: 180px;
+    border: 1px solid #222222;
+    padding: 12px 0;
+    border-radius: 6px;
+    transition: .2s linear
+  }
+
+  .formWebinar .btn a:hover{
+    background-color: #222222;
+    color: #fff;
+  }
+
+  footer{
+    background-color: #222222;
+    color: #fff;
+    margin-top: 195px;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .copyright{
+    font-size: 15px;
+  }
+
+  .copyright a{
+    font-size: 16px;
+    color: #ff8000;
+    font-weight: 500;
+  }
+  

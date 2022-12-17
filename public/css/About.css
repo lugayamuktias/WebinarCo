@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+
   font-family: "Ubuntu", sans-serif;
+
 }
 
 .clear {
@@ -16,7 +18,9 @@
   top: 0;
   width: 100%;
   padding: 20px;
+
   background: #222222;
+
 }
 
 .nav-content {
@@ -49,11 +53,13 @@
   font-weight: 500;
   color: #fff;
   padding: 10px 4px;
+
   transition: 0.2s linear;
 }
 
 .nav-content ul li a:hover {
   color: #ff8000 !important;
+
 }
 
 body {
