@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>WebinarCo - Login</title>
+    <title>WebinarCo Log/Register</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url();?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
