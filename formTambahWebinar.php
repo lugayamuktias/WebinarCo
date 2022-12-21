@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="stylewebinar.css">
+    <link rel="stylesheet" href="public/css/stylewebinar.css">
     <title>WebinarCo</title>
 </head>
 
@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    <form action="">
+    <form action="inputWebinar.php" method="POST" enctype="multipart/form-data">
         <div class="formWebinar">
             <h1>Tambah Webinar</h1>
             <div class="txtb">
@@ -83,7 +83,7 @@
 
             <div class="btn">
                 <a href="webinarAdmin.php"><strong>Back</strong></a>
-                <a href="#"><strong>Submit Webinar</strong></a>
+                <a href="inputWebinar.php"><strong>Submit Webinar</strong></a>
             </div>
         </div>
     </form>

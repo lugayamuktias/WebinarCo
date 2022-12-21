@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylewebinar.css">
+
+    <link rel="stylesheet" href="public/css/stylewebinar.css">
     <title>Webinar User</title>
 </head>
 
@@ -31,7 +32,7 @@
             </div>
             <div class="detailwebinar">
                 <div class="webinars">
-                    <a href="/"></a><img src="image/webinar2.jpg" alt="" class="picwebinar"></a>
+                    <a href="/"></a><img src="public/img/webinar2.jpg" alt="" class="picwebinar"></a>
                     <h4>Webinar 1</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
@@ -42,7 +43,7 @@
                 </div>
 
                 <div class="webinars">
-                    <a href="/"><img src="image/webinar2.jpg" alt="" class="picwebinar"></a>
+                    <a href="/"><img src="public/img/webinar2.jpg" alt="" class="picwebinar"></a>
                     <h4>Webinar 2</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
@@ -53,7 +54,7 @@
                 </div>
 
                 <div class="webinars">
-                    <a href="/"><img src="image/webinar2.jpg" alt="" class="picwebinar"></a>
+                    <a href="/"><img src="public/img/webinar2.jpg" alt="" class="picwebinar"></a>
                     <h4>Webinar 3</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
