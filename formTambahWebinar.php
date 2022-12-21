@@ -83,7 +83,7 @@
 
             <div class="btn">
                 <a href="webinarAdmin.php"><strong>Back</strong></a>
-                <a href="#"><strong>Submit Webinar</strong></a>
+                <a href="inputWebinar.php"><strong>Submit Webinar</strong></a>
             </div>
         </div>
     </form>
