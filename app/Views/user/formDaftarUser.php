@@ -14,9 +14,9 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="inner-widht">
-            <a href="<?= base_url('user/index');?>"class="webinarco">WEBINARCO</a>
+            <a href="#home" class="webinarco">WEBINARCO</a>
             <div class="navbar-menu">
-				<a class="active"><a href="<?= base_url('login/index');?>">HOME</a>
+				<a href="<?= base_url('login/index');?>">HOME</a>
 				<a href="<?= base_url('peserta/webinarpeserta');?>">WEBINAR</a>
 				<a href="<?= base_url('peserta/aboutpeserta');?>">ABOUT</a>
 				<a href="<?= base_url('logout');?>">LOGOUT</a>
@@ -85,7 +85,7 @@
             </div>
 
             <div class="btn">
-                <a href="<?= base_url('user/webinaruser');?>"><strong>Back</strong></a>
+                <a href="webinarUser.php"><strong>Back</strong></a>
                 <a href="#"><strong>Daftar Webinar</strong></a>
             </div>
         </div>

@@ -46,9 +46,11 @@ $routes->get('/admin/webinaradmin', 'admin::webinaradmin', ['filter' => 'role:ad
 $routes->get('/admin', 'admin::webinaradmin', ['filter' => 'role:admin']);
 $routes->get('/admin/formtambahwebinar', 'event::TambahWebinar', ['filter' => 'role:admin']);
 $routes->get('/admin', 'admin::webinaradmin', ['filter' => 'role:admin']);
-$routes->get('/admin/formeditwebinar', 'admin::EditWebinar', ['filter' => 'role:admin']);
+$routes->get('/admin/formeditwebinar', 'event::EditWebinar', ['filter' => 'role:admin']);
 $routes->get('/admin', 'admin::webinaradmin', ['filter' => 'role:admin']);
-$routes->get('/admin/hapuswebinar', 'admin::HapusWebinar', ['filter' => 'role:admin']);
+$routes->get('/admin/hapuswebinar', 'event::HapusWebinar', ['filter' => 'role:admin']);
+$routes->get('/admin', 'admin::webinaradmin', ['filter' => 'role:admin']);
+$routes->get('/admin/inputWebinar', 'event::InputDataWebinar', ['filter' => 'role:admin']);
 $routes->get('/', 'peserta::webinarpeserta');
 $routes->get('/', 'peserta::aboutpeserta');
 $routes->get('/', 'peserta::daftarpeserta');

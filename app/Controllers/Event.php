@@ -15,4 +15,8 @@ class Event extends BaseController{
     {
         return view('admin/hapusWebinar');
     }
+        public function InputDataWebinar()
+    {
+        return view('admin/InputWebinar');
+    }
 }
