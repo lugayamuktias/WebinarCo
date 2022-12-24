@@ -26,7 +26,7 @@
 
     <form action="">
         <div class="formWebinar">
-            <h1>Register Akun</h1>
+            <h1>Daftar Peserta</h1>
             <div class="txtb">
                 <label>Nama :</label>
                 <input type="text" name="" value="" placeholder="Your Name">

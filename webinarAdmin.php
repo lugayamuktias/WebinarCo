@@ -34,7 +34,7 @@
             </div>
             <div class="detailwebinar">
                 <div class="webinars">
-                    <a href="/"></a><img src="public/img/webinar2.jpg" alt="" class="picwebinar"></a>
+                    <a href="viewWebinar.php"><img src="public/img/webinar2.jpg" alt=""></a>
                     <h4>Webinar 1</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="webinars">
-                    <a href="/"><img src="public/img/webinar2.jpg" alt="" class="picwebinar"></a>
+                    <a href="viewWebinar.php"><img src="public/img/webinar2.jpg" alt=""></a>
                     <h4>Webinar 2</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="webinars">
-                    <a href="/"><img src="public/img/webinar2.jpg" alt="" class="picwebinar"></a>
+                    <a href="viewWebinar.php"><img src="public/img/webinar2.jpg" alt=""></a>
                     <h4>Webinar 3</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
                         nemo sit quo, numquam aliquam earum odit debitis vel aut, unde animi, consequuntur

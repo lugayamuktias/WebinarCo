@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "PT Serif", Georgia, serif;
   box-sizing: border-box;
 }
 
@@ -22,8 +22,10 @@ body {
 }
 
 .inner-widht {
-  max-width: 1750px;
-  padding: 0 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .navbar .inner-widht {
@@ -70,11 +72,12 @@ body {
 
 #kelolawebinar .title {
   margin-top: 100px;
-  margin-left: 60px;
+  margin-bottom: 70px;
+  text-align: center;
 }
 
 #kelolawebinar .buttons2 {
-  margin-top: 30px;
+margin-left: 30px;
 }
 
 #kelolawebinar .buttons2 a {
@@ -96,13 +99,19 @@ body {
 }
 
 .detailwebinar {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   margin-left: 60px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-right: 30px;
 }
 
-.webinars .picwebinar {
-  width: 500px;
+.webinars{
+  margin-inline: 10px;
+}
+.webinars img {
+  width: 100%;
+  height: auto;
   border-radius: 5px;
   margin-bottom: 20px;
   color: #fff;
@@ -115,6 +124,11 @@ body {
   font-size: 18px;
   margin-bottom: 6px;
   margin-right: 15px;
+}
+
+.webinars a:hover {
+  background-color: #ff8000;
+  color: #fff;
 }
 
 .formWebinar {
@@ -207,3 +221,66 @@ footer {
   color: #ff8000;
   font-weight: 500;
 }
+
+.row{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 150px;
+  position: relative;
+  min-height: 1px;
+  padding-right: 20px;
+  
+}
+.viewWebinar{
+  min-height: 1px;
+  padding-left: 20px;
+}
+
+.viewGambar{
+  margin-left: 40px;
+  margin-right: 30px;
+
+}
+
+.viewGambar img{
+  width: 140%;
+  height: auto;
+  float: left;
+}
+
+.viewDeskripsi{
+  position: relative;
+  min-height: 1px;
+  padding-left: 250px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.viewWebinar .info{
+  display: block;
+}
+
+.info h3{
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.info p{
+  display: block;
+  font-size: 20px;
+}
+
+.info ul{
+  list-style: none;
+  display: block;
+  line-height: 30px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+
+
