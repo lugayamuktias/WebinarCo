@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="public/css/detailWebinar.css">
+    <link rel="stylesheet" href="/css/detailWebinar.css">
     <title>View Webinar</title>
 </head>
 
@@ -16,10 +16,10 @@
         <div class="inner-widht">
             <a href="#home" class="webinarco">WEBINARCO</a>
             <div class="navbar-menu">
-                <a href="#home">HOME</a>
-                <a href="#webinar">WEBINAR</a>
-                <a href="#about">ABOUT</a>
-                <a href="#logout">LOGOUT</a>
+                <a class="active"><a href="<?= base_url('login/index');?>">HOME</a>
+                    <a href="<?= base_url('peserta/webinarpeserta');?>">WEBINAR</a>
+                    <a href="<?= base_url('peserta/aboutpeserta');?>">ABOUT</a>
+                    <a href="<?= base_url('logout');?>">LOGOUT</a>
             </div>
         </div>
     </nav>
@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="viewWebinar">
                     <div class="viewGambar">
-                        <img src="public/img/webinar2.jpg" alt="Gambar Webinar 1">
+                        <img src="/img/webinar2.jpg" alt="Gambar Webinar 1">
                     </div>
                 </div>
                 <div class="viewDeskripsi">

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylewebinar.css">
+    <link rel="stylesheet" href="/css/detailWebinar.css">
     <title>WebinarCo</title>
 </head>
 
@@ -16,9 +16,9 @@
             <a href="#home" class="webinarco">WEBINARCO</a>
             <div class="navbar-menu">
                 <a class="active"><a href="<?= base_url('login/index');?>">HOME</a>
-                <a href="<?= base_url('admin/webinaradmin');?>">WEBINAR</a>
-                <a href="<?= base_url('admin/aboutadmin');?>">ABOUT</a>
-                <a href="<?= base_url('logout');?>">LOGOUT</a>
+                    <a href="<?= base_url('admin/webinaradmin');?>">WEBINAR</a>
+                    <a href="<?= base_url('admin/aboutadmin');?>">ABOUT</a>
+                    <a href="<?= base_url('logout');?>">LOGOUT</a>
             </div>
         </div>
     </nav>
@@ -82,7 +82,7 @@
 
             <div class="btn">
                 <a href="webinarAdmin.php"><strong>Back</strong></a>
-                <a href="#"><strong>Submit Webinar</strong></a>
+                <button type="submit" name="Simpan"><strong>Submit Webinar</strong></button>
             </div>
         </div>
     </form>
