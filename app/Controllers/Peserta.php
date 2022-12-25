@@ -15,4 +15,8 @@ class peserta extends BaseController{
     {
         return view('user/formDaftarUser');
     }
+    public function LihatWebinar()
+    {
+        return view('user/viewWebinar');
+    }
 }
