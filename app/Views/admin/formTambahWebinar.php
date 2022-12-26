@@ -23,7 +23,7 @@
         </div>
     </nav>
 
-    <form action="">
+    <form action="inputWebinar.php">
         <div class="formWebinar">
             <h1>Tambah Webinar</h1>
             <div class="txtb">

@@ -15,11 +15,15 @@ class Event extends BaseController{
     {
         return view('admin/hapusWebinar');
     }
-    public function LihatWebinar()
+        public function LihatWebinar()
     {
         return view('admin/viewWebinar');
     }
-    public function SimpanWebinar()
+        public function LihatWebinarAdmin()
+    {
+        return view('admin/viewWebinarAdmin');
+    }
+        public function SimpanWebinar()
     {
         return view('admin/inputWebinar');
     }
