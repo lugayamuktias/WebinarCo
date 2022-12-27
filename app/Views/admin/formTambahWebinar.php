@@ -23,7 +23,7 @@
         </div>
     </nav>
 
-    <form action="inputWebinar.php">
+    <form action="<?php echo base_url(). 'event/SimpanWebinar'; ?>" menthod="POST">
         <div class="formWebinar">
             <h1>Tambah Webinar</h1>
             <div class="txtb">
