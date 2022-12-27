@@ -2,7 +2,10 @@
 
 namespace App\Controllers;
 
-class admin extends BaseController{
+use CodeIgniter\Controller;
+use CodeIgniter\Model;
+
+class admin extends Controller{
     public function webinaradmin()
     {
         return view('admin/webinaradmin');
