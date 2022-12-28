@@ -1,11 +1,11 @@
-<?php
+<?php namespace App\Controllers;
 
-namespace App\Controllers;
-
-use App\Models\ModelAdmin;
 use CodeIgniter\Controller;
+use App\Models\ModelAdmin;
+
 
 class admin extends Controller{
+		
     public function webinaradmin()
     {
         return view('admin/webinaradmin');
@@ -17,11 +17,10 @@ class admin extends Controller{
     }
 
     public function lihatdata(){
-        $adm = new ModelAdmin();
-        $data = [
-            'tampildata' => $adm->tampildata()->getResult()
-        ];
-
-        return view('admin/viewWebinarAdmin', $data);
+		$model	= new ModelAdmin();
+		$data	= array();
+        $data['tampildata'] = $model->gettampildata();
+		return view('admin/viewWebinarAdmin',$data);
+		
     }
 }
