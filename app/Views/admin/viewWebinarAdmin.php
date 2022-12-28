@@ -76,21 +76,21 @@
                         </tr>
                     </thead>
                     <tbody>
+				
                         <?php 
-                            $nomer = 0;
-                            foreach($tampildata as $row):
-                                $nomer++;
-                        ?>
+							$no=1;
+							foreach($tampildata as $u){ ?>
+						
                         <tr>
-                            <th><?= $nomer ?></th>
-                            <td><?= $row->namapeserta ?></td>
-                            <td><?= $row->tgllahir ?></td>
-                            <td><?= $row->jeniskelamin ?></td>
-                            <td><?= $row->notelp ?></td>
-                            <td><?= $row->address ?></td>
-                            <td><?= $row->pekerjaan ?></td>
-                            <td><?= $row->idwebinar ?></td>
-                            <td><?= $row->namawebinar ?></td>
+                            <th><?php echo $no++; ?></th>
+                            <td><?php echo $u[namapeserta]; ?></td>
+							<td><?php echo $u[tgllahir]; ?></td>
+							<td><?php echo $u[jeniskelamin]; ?></td>
+							<td><?php echo $u[notelp]; ?></td>
+							<td><?php echo $u[address]; ?></td>
+							<td><?php echo $u[pekerjaan]; ?></td>
+							<td><?php echo $u[idwebinar]; ?></td>
+							<td><?php echo $u[namawebinar]; ?></td>
                             <td>
                                 <span class="action_btn">
                                     <a href="#">Edit</a>
@@ -98,9 +98,7 @@
                                 </span>
                             </td>
                         </tr>
-                        <?php 
-                            endforeach;
-                        ?>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

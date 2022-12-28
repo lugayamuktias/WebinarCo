@@ -1,16 +1,13 @@
-<?php
+<?php nameSpace App\Models;
 
-nameSpace App\Models;
 use CodeIgniter\Model;
 
 class ModelAdmin extends Model{
-    function __construct()
-    {
-        $this->db = db_connect();
-    }
+    protected $table = 'tbpeserta';
+    protected $primaryKey = 'nomor';
 
-    function tampildata(){
-        return $this->db->table('tbpeserta')->get();
+    public function gettampildata(){
+        return $this->findAll();
     }
 }
 
