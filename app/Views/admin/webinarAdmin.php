@@ -37,11 +37,7 @@
             </div>
             <div class="detailwebinar">
                 <div class="webinars">
-<<<<<<< HEAD
                     <a href="<?= base_url('admin/LihatWebinarAdmin');?>"><img src="/img/webinar2.jpg" alt=""
-=======
-                    <a href="<?= base_url('event/LihatWebinarAdmin');?>"><img src="/img/webinar2.jpg" alt=""
->>>>>>> f33438dbcdd4d21acd7d1bd415cee0a68f38f034
                             class="picwebinar"></a>
                     <h4>Webinar 1</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
