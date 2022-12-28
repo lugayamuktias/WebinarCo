@@ -16,10 +16,10 @@ class admin extends Controller{
         return view('admin/About');
     }
 
-    public function lihatdata(){
-		$model	= new ModelAdmin();
-		$data	= array();
-        $data['tampildata'] = $model->gettampildata();
+    public function lihatWebinarAdmin(){
+        $data['title'] = 'Daftar Peserta';
+		$users = new \Myth\Auth\Models\UserModel();
+        $data['users'] = $users->findAll() ;
 		return view('admin/viewWebinarAdmin',$data);
 		
     }

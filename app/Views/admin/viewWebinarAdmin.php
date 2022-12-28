@@ -79,25 +79,24 @@
 				
                         <?php 
 							$no=1;
-							foreach($tampildata as $u){ ?>
-						
-                        <tr>
-                            <th><?php echo $no++; ?></th>
-                            <td><?php echo $u[namapeserta]; ?></td>
-							<td><?php echo $u[tgllahir]; ?></td>
-							<td><?php echo $u[jeniskelamin]; ?></td>
-							<td><?php echo $u[notelp]; ?></td>
-							<td><?php echo $u[address]; ?></td>
-							<td><?php echo $u[pekerjaan]; ?></td>
-							<td><?php echo $u[idwebinar]; ?></td>
-							<td><?php echo $u[namawebinar]; ?></td>
+							foreach($users as $row){ ?>
+                       <tr>
+                            <th><?= $row->id ?></th>
+                            <td><?= $row->namapeserta ?></td>
+                            <td><?= $row->tgllahir ?></td>
+                            <td><?= $row->jeniskelamin ?></td>
+                            <td><?= $row->notelp ?></td>
+                            <td><?= $row->address ?></td>
+                            <td><?= $row->pekerjaan ?></td>
+                            <td><?= $row->idwebinar ?></td>
+                            <td><?= $row->namawebinar ?></td>
                             <td>
                                 <span class="action_btn">
                                     <a href="#">Edit</a>
                                     <a href="#">Remove</a>
                                 </span>
                             </td>
-                        </tr>
+                        </tr>
                         <?php } ?>
                     </tbody>
                 </table>
