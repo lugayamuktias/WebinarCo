@@ -76,11 +76,13 @@
                         </tr>
                     </thead>
                     <tbody>
+				
                         <?php 
-                            foreach($users as $row):
-                        ?>
-                        <tr>
-                            <td><?= $row->id ?></td>
+
+							$no=1;
+							foreach($users as $row){ ?>
+                       <tr>
+                            <th><?= $row->id ?></th>
                             <td><?= $row->namapeserta ?></td>
                             <td><?= $row->tgllahir ?></td>
                             <td><?= $row->jeniskelamin ?></td>
@@ -95,10 +97,8 @@
                                     <a href="#">Remove</a>
                                 </span>
                             </td>
-                        </tr>
-                        <?php 
-                            endforeach;
-                        ?>
+                        </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

@@ -1,11 +1,11 @@
-<?php
+<?php namespace App\Controllers;
 
-namespace App\Controllers;
-
-use App\Models\ModelAdmin;
 use CodeIgniter\Controller;
+use App\Models\ModelAdmin;
+
 
 class admin extends Controller{
+		
     public function webinaradmin()
     {
         return view('admin/webinaradmin');
@@ -21,5 +21,6 @@ class admin extends Controller{
 		$users = new \Myth\Auth\Models\UserModel();
         $data['users'] = $users->findAll() ;
 		return view('admin/viewWebinarAdmin',$data);
+
     }
 }
