@@ -76,16 +76,21 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php 
+                            $nomer = 0;
+                            foreach($tampildata as $row):
+                                $nomer++;
+                        ?>
                         <tr>
-                            <td>01</td>
-                            <td>Peserta 1</td>
-                            <td>01-01-2001</td>
-                            <td>Perempuan</td>
-                            <td>(+62) 8123456789</td>
-                            <td>Jl. Yuk 123</td>
-                            <td>Mahasiswa</td>
-                            <td>0001</td>
-                            <td>Webinar 1</td>
+                            <th><?= $nomer ?></th>
+                            <td><?= $row->namapeserta ?></td>
+                            <td><?= $row->tgllahir ?></td>
+                            <td><?= $row->jeniskelamin ?></td>
+                            <td><?= $row->notelp ?></td>
+                            <td><?= $row->address ?></td>
+                            <td><?= $row->pekerjaan ?></td>
+                            <td><?= $row->idwebinar ?></td>
+                            <td><?= $row->namawebinar ?></td>
                             <td>
                                 <span class="action_btn">
                                     <a href="#">Edit</a>
@@ -93,40 +98,9 @@
                                 </span>
                             </td>
                         </tr>
-                        <tr>
-                            <td>02</td>
-                            <td>Peserta 2</td>
-                            <td>01-01-2001</td>
-                            <td>Laki - Laki</td>
-                            <td>(+62) 8123456789</td>
-                            <td>Jl. Yuk 123</td>
-                            <td>Mahasiswa</td>
-                            <td>0002</td>
-                            <td>Webinar 2</td>
-                            <td>
-                                <span class="action_btn">
-                                    <a href="#">Edit</a>
-                                    <a href="#">Remove</a>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>03</td>
-                            <td>Peserta 3</td>
-                            <td>01-01-2001</td>
-                            <td>Perempuan</td>
-                            <td>(+62) 8123456789</td>
-                            <td>Jl. Yuk 123</td>
-                            <td>Mahasiswa</td>
-                            <td>0003</td>
-                            <td>Webinar 3</td>
-                            <td>
-                                <span class="action_btn">
-                                    <a href="#">Edit</a>
-                                    <a href="#">Remove</a>
-                                </span>
-                            </td>
-                        </tr>
+                        <?php 
+                            endforeach;
+                        ?>
                     </tbody>
                 </table>
             </div>
