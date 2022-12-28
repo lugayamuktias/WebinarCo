@@ -20,6 +20,7 @@
 				<li><a href="<?= base_url('peserta/webinarpeserta');?>">WEBINAR</a></li>
 				<li><a href="<?= base_url('peserta/aboutpeserta');?>">ABOUT</a></li>
 				<li><a href="<?= base_url('logout');?>">LOGOUT</a></li>
+
                 </ul>
             </div>
         </nav>

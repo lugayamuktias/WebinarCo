@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/detailWebinar.css">
+
+    <link rel="stylesheet" href="public/css/detailWebinar.css">
     <title>WebinarCo</title>
 </head>
 
@@ -15,69 +16,69 @@
         <div class="inner-widht">
             <a href="#home" class="webinarco">WEBINARCO</a>
             <div class="navbar-menu">
-                <a class="active"><a href="<?= base_url('login/index');?>">HOME</a>
-                    <a href="<?= base_url('admin/webinaradmin');?>">WEBINAR</a>
-                    <a href="<?= base_url('admin/aboutadmin');?>">ABOUT</a>
-                    <a href="<?= base_url('logout');?>">LOGOUT</a>
+                <a href="#home">HOME</a>
+                <a href="#webinar">WEBINAR</a>
+                <a href="#about">ABOUT</a>
+                <a href="#logout">LOGOUT</a>
             </div>
         </div>
     </nav>
 
-    <form action="<?php echo base_url(). 'event/SimpanWebinar'; ?>" menthod="POST">
+    <form action="inputWebinar.php" method="POST" enctype="multipart/form-data">
         <div class="formWebinar">
             <h1>Tambah Webinar</h1>
             <div class="txtb">
                 <label>Nama Webinar :</label>
-                <input type="text" name="" value="" placeholder="Nama Webinar">
+                <input type="text" name="nama_webinar" placeholder="Nama Webinar">
             </div>
 
             <div class="txtb">
                 <label>Pembicara :</label>
-                <input type="text" name="" value="" placeholder="Pembicara">
+                <input type="text" name="pembicara" placeholder="Pembicara">
             </div>
 
             <div class="txtb">
                 <label>Topik :</label>
-                <input type="text" name="" value="" placeholder="Topik Webinar">
+                <input type="text" name="topik_webinar" placeholder="Topik Webinar">
             </div>
 
             <div class="column">
                 <div class="txtb">
                     <label>Tanggal Mulai :</label>
-                    <input type="date" name="tanggalMulai" value="" placeholder="Enter Your Phone Number">
+                    <input type="date" name="tanggal_mulai" placeholder="Enter Your Phone Number">
                 </div>
 
                 <div class="txtb">
                     <label>Waktu Mulai :</label>
-                    <input type="time" name="waktuMulai" value="" placeholder="Enter Your Phone Number">
+                    <input type="time" name="waktu_mulai" placeholder="Enter Your Phone Number">
                 </div>
 
                 <div class="txtb">
                     <label>Durasi (Menit) :</label>
-                    <input type="number" max="1440" step="1" min="1" value="1">
+                    <input type="number" name="durasi" max="1440" step="1" min="1" value="1">
                 </div>
 
                 <div class="txtb">
                     <label>Batas Peserta (Orang) :</label>
-                    <input type="number" max="2000" step="1" min="1" value="1">
+                    <input type="number" name="batas_peserta" max="2000" step="1" min="1" value="1">
                 </div>
             </div>
 
             <div class="txtb">
                 <label>Type Event :</label>
                 <div class="type-event">
-                    <input type="radio" id="gratis" name="type-event" value="Gratis (tanpa sertifikat)" required="" />
+                    <input type="radio" id="gratis" name="type_event" value="Gratis (tanpa sertifikat)" required="" />
                     <label for="gratis">Gratis (tanpa sertifikat)</label>
                 </div>
                 <div class="type-event">
-                    <input type="radio" id="gratis-sert" name="type-event" value="Gratis + sertifikat" required="" />
+                    <input type="radio" id="gratis-sert" name="type_event" value="Gratis + sertifikat" required="" />
                     <label for="gratis-sert">Gratis + sertifikat</label>
                 </div>
             </div>
 
             <div class="txtb">
                 <label>Poster Webinar :</label>
-                <input type="file" class="custom-file-input" id="customFile" name="filename">
+                <input type="file" class="custom-file-input" id="customFile" name="gambar">
             </div>
 
             <div class="btn">

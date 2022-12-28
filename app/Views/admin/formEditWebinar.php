@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/stylewebinar.css">
+    <link rel="stylesheet" href="/css/detailWebinar.css">
     <title>WebinarCo</title>
 </head>
 
@@ -16,10 +16,10 @@
         <div class="inner-widht">
             <a href="#home" class="webinarco">WEBINARCO</a>
             <div class="navbar-menu">
-				<a href="<?= base_url('login/index');?>">HOME</a>
-				<a href="<?= base_url('admin/webinaradmin');?>">WEBINAR</a>
-				<a href="<?= base_url('admin/aboutadmin');?>">ABOUT</a>
-				<a href="<?= base_url('logout');?>">LOGOUT</a>
+                <a class="active"><a href="<?= base_url('login/index');?>">HOME</a>
+                    <a href="<?= base_url('admin/webinaradmin');?>">WEBINAR</a>
+                    <a href="<?= base_url('admin/aboutadmin');?>">ABOUT</a>
+                    <a href="<?= base_url('logout');?>">LOGOUT</a>
             </div>
         </div>
     </nav>

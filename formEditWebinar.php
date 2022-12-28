@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/detailWebinar.css">
+
+    <link rel="stylesheet" href="public/css/detailWebinar.css">
     <title>WebinarCo</title>
 </head>
 
@@ -15,17 +16,17 @@
         <div class="inner-widht">
             <a href="#home" class="webinarco">WEBINARCO</a>
             <div class="navbar-menu">
-                <a class="active"><a href="<?= base_url('login/index');?>">HOME</a>
-                    <a href="<?= base_url('admin/webinaradmin');?>">WEBINAR</a>
-                    <a href="<?= base_url('admin/aboutadmin');?>">ABOUT</a>
-                    <a href="<?= base_url('logout');?>">LOGOUT</a>
+                <a href="#home">HOME</a>
+                <a href="#webinar">WEBINAR</a>
+                <a href="#about">ABOUT</a>
+                <a href="#logout">LOGOUT</a>
             </div>
         </div>
     </nav>
 
-    <form action="<?php echo base_url(). 'event/SimpanWebinar'; ?>" menthod="POST">
+    <form action="">
         <div class="formWebinar">
-            <h1>Tambah Webinar</h1>
+            <h1>Edit Webinar</h1>
             <div class="txtb">
                 <label>Nama Webinar :</label>
                 <input type="text" name="" value="" placeholder="Nama Webinar">
@@ -82,7 +83,7 @@
 
             <div class="btn">
                 <a href="webinarAdmin.php"><strong>Back</strong></a>
-                <button type="submit" name="Simpan"><strong>Submit Webinar</strong></button>
+                <a href="#"><strong>Edit Webinar</strong></a>
             </div>
         </div>
     </form>
