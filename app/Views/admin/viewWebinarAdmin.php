@@ -77,12 +77,10 @@
                     </thead>
                     <tbody>
                         <?php 
-                            $nomer = 0;
-                            foreach($tampildata as $row):
-                                $nomer++;
+                            foreach($users as $row):
                         ?>
                         <tr>
-                            <th><?= $nomer ?></th>
+                            <td><?= $row->id ?></td>
                             <td><?= $row->namapeserta ?></td>
                             <td><?= $row->tgllahir ?></td>
                             <td><?= $row->jeniskelamin ?></td>
