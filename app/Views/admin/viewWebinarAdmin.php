@@ -79,9 +79,9 @@
 				
                         <?php 
 							$no=1;
-							foreach($users as $row){ ?>
+							foreach($tbpeserta as $row){ ?>
                        <tr>
-                            <th><?= $row->id ?></th>
+                            <th><?= $row->idpeserta ?></th>
                             <td><?= $row->namapeserta ?></td>
                             <td><?= $row->tgllahir ?></td>
                             <td><?= $row->jeniskelamin ?></td>
