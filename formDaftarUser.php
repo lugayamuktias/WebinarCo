@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="public/css/stylewebinar.css">
+    <link rel="stylesheet" href="public/css/detailWebinar.css">
     <title>WebinarCo</title>
 </head>
 
@@ -26,7 +26,7 @@
 
     <form action="">
         <div class="formWebinar">
-            <h1>Register Akun</h1>
+            <h1>Daftar Peserta</h1>
             <div class="txtb">
                 <label>Nama :</label>
                 <input type="text" name="" value="" placeholder="Your Name">
