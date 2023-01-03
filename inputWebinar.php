@@ -27,7 +27,7 @@
     <?php
     $user = "root";
     $password  = "";
-    $db  = "webinarcowebinar";
+    $db  = "webinarcologin";
     $host = "localhost";
 
     $kon = mysqli_connect($host, $user, $password);
