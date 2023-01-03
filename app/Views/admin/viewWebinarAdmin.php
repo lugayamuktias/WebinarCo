@@ -93,7 +93,7 @@
                             <td>
                                 <span class="action_btn">
                                     <a href="#">Edit</a>
-                                    <a href="#">Remove</a>
+                                    <button type="button" onclick="remove('<?= $row->idpeserta ?>')">Remove</button>
                                 </span>
                             </td>
                         </tr>
@@ -112,6 +112,18 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function remove(idpeserta) {
+            pesan = confirm('Apakah anda yakin?');
+
+            if (pesan) {
+                window.location.href = ("<?= site_url('event/remove/') ?>") +idpeserta;
+            } else {
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>

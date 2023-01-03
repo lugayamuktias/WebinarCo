@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\ModelTambahWebinar;
+use App\Models\ModelAdmin;
 class Event extends BaseController{
         public function EditWebinar()
     {
@@ -22,8 +23,7 @@ class Event extends BaseController{
     {
         return view('admin/viewWebinarAdmin');
     }
-        public function SimpanWebinar()
-    {
+        public function SimpanWebinar(){
         $data = [
             'nama_webinar' => $this->request->getPost('namawebinar'),
             'pembicara' => $this->request->getPost('pembicara'),
@@ -36,12 +36,23 @@ class Event extends BaseController{
             'gambar' => $this->request->getPost('filename'),
         ];
 
-        $addwebinar = new ModelTambahWebinar();
+        $adm = new ModelTambahWebinar();
 
-        $simpan = $addwebinar->simpan($data);
+        $simpan = $adm->simpan($data);
         
         if($simpan){
             return redirect()->to('/Event/TambahWebinar');
         }
+    }
+
+        public function remove()
+    {
+        $uri = service('uri');
+        $idpeserta = $uri->getSegment('3');
+
+        $adm = new ModelAdmin();
+
+        $adm->hapusdata($idpeserta);
+        return redirect()->to('admin/viewWebinarAdmin');
     }
 }
