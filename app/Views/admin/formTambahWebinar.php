@@ -23,22 +23,23 @@
         </div>
     </nav>
 
-    <form action="<?php echo base_url(). 'event/SimpanWebinar'; ?>" menthod="POST">
+    <?= form_open('Event/SimpanWebinar')?>
+    <form>
         <div class="formWebinar">
             <h1>Tambah Webinar</h1>
             <div class="txtb">
                 <label>Nama Webinar :</label>
-                <input type="text" name="" value="" placeholder="Nama Webinar">
+                <input type="text" name="namawebinar" value="" placeholder="Nama Webinar">
             </div>
 
             <div class="txtb">
                 <label>Pembicara :</label>
-                <input type="text" name="" value="" placeholder="Pembicara">
+                <input type="text" name="pembicara" value="" placeholder="Pembicara">
             </div>
 
             <div class="txtb">
                 <label>Topik :</label>
-                <input type="text" name="" value="" placeholder="Topik Webinar">
+                <input type="text" name="topik" value="" placeholder="Topik Webinar">
             </div>
 
             <div class="column">
@@ -54,15 +55,14 @@
 
                 <div class="txtb">
                     <label>Durasi (Menit) :</label>
-                    <input type="number" max="1440" step="1" min="1" value="1">
+                    <input type="number" name="durasi" max="1440" step="1" min="1" value="1">
                 </div>
 
                 <div class="txtb">
                     <label>Batas Peserta (Orang) :</label>
-                    <input type="number" max="2000" step="1" min="1" value="1">
+                    <input type="number" name="batas" max="2000" step="1" min="1" value="1">
                 </div>
             </div>
-
             <div class="txtb">
                 <label>Type Event :</label>
                 <div class="type-event">
@@ -86,7 +86,7 @@
             </div>
         </div>
     </form>
-
+<?= form_close()?>
     <!-- Footer -->
     <!-- <footer>
         <div class="inner-widht">

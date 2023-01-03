@@ -36,15 +36,15 @@
                     <span>Irfan Maulana C.<br>3411171018</span>
                 </li>
                 <li>
-                    <img src="/img/default1.jpg">
+                    <img src="/img/Foto-Gheral.jpg">
                     <span>Gheral Naza G.<br>3411201003</span>
                 </li>
                 <li>
-                    <img src="/img/default1.jpg">
+                    <img src="/img/Foto-Irgo.jpg">
                     <span>Irgo Satura P.S.<br>3411201010</span>
                 </li>
                 <li>
-                    <img src="/img/default1.jpg">
+                    <img src="/img//Foto-Setyo.jpg">
                     <span>Setyo Arie A.<br>3411201022</span>
                 </li>
                 <li>

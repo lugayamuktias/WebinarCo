@@ -5,6 +5,7 @@ use App\Models\ModelAdmin;
 
 
 class admin extends Controller{
+    protected $db, $builder;
 		
     public function webinaradmin()
     {
@@ -16,10 +17,19 @@ class admin extends Controller{
         return view('admin/About');
     }
 
+    public function __construct(){
+        $this->db = \config\Database::connect();
+        $this->builder = $this->db->table('tbpeserta');
+    }
     public function lihatWebinarAdmin(){
         $data['title'] = 'Daftar Peserta';
-		$users = new \Myth\Auth\Models\UserModel();
-        $data['users'] = $users->findAll() ;
+
+		// $tbpeserta = new \Myth\Auth\Models\UserModel();
+        // $data['tbpeserta'] = $tbpeserta->findAll() ;
+ 
+        $this->builder->select('idpeserta, namapeserta, tgllahir, jeniskelamin, notelp, address, pekerjaan, idwebinar, namawebinar');
+        $query=$this->builder->get();
+        $data['tbpeserta'] = $query->getResult() ;
 		return view('admin/viewWebinarAdmin',$data);
 
     }
