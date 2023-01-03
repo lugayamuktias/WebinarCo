@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Des 2022 pada 14.42
--- Versi server: 10.4.21-MariaDB
--- Versi PHP: 8.0.12
+-- Waktu pembuatan: 03 Jan 2023 pada 17.45
+-- Versi server: 10.4.19-MariaDB
+-- Versi PHP: 8.0.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -72,9 +72,14 @@ CREATE TABLE `auth_groups_permissions` (
 
 INSERT INTO `auth_groups_permissions` (`group_id`, `permission_id`) VALUES
 (1, 1),
+(1, 1),
+(1, 2),
 (1, 2),
 (1, 3),
+(1, 3),
 (2, 2),
+(2, 2),
+(2, 4),
 (2, 4);
 
 -- --------------------------------------------------------
@@ -163,41 +168,41 @@ INSERT INTO `auth_logins` (`id`, `ip_address`, `email`, `user_id`, `date`, `succ
 (44, '::1', 'setyokecap@gmail.com', 3, '2022-12-16 22:07:49', 1),
 (45, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-16 22:32:20', 1),
 (46, '::1', 'setyokecap@gmail.com', 3, '2022-12-16 22:32:53', 1),
-(47, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-21 01:19:10', 1),
-(48, '::1', 'setyokecap@gmail.com', 3, '2022-12-21 01:21:31', 1),
-(49, '::1', 'setyokecap@gmail.com', 3, '2022-12-21 01:22:38', 1),
-(50, '::1', 'setyokecap@gmail.com', 3, '2022-12-21 01:27:10', 1),
-(51, '::1', 'setyokecap@gmail.com', 3, '2022-12-21 01:44:22', 1),
-(52, '::1', 'rrikikarunia', NULL, '2022-12-21 01:44:47', 0),
-(53, '::1', 'rifqikaruniaibadirachman.9a@gmail.com', 4, '2022-12-21 01:44:56', 1),
-(54, '::1', 'acephandika27@gmail.com', 5, '2022-12-21 01:52:59', 1),
-(55, '::1', 'setyoarie', NULL, '2022-12-21 10:40:25', 0),
-(56, '::1', 'setyoarie', NULL, '2022-12-21 10:40:33', 0),
-(57, '::1', 'setyoarie', NULL, '2022-12-24 11:20:20', 0),
-(58, '::1', 'setyoarie', NULL, '2022-12-24 11:21:07', 0),
-(59, '::1', 'setyoaa', NULL, '2022-12-24 11:21:20', 0),
-(60, '::1', 'setyo131', NULL, '2022-12-24 11:21:40', 0),
-(61, '::1', 'setyoarie', NULL, '2022-12-24 11:21:47', 0),
-(62, '::1', 'setyoaa', NULL, '2022-12-24 11:21:58', 0),
-(63, '::1', 'SetyoarieA', NULL, '2022-12-24 11:22:04', 0),
-(64, '::1', 'SetyoArie', NULL, '2022-12-24 11:23:36', 0),
-(65, '::1', 'setyokecap@gmail.com', 3, '2022-12-24 11:23:59', 1),
-(66, '::1', 'setyokecap@gmail.com', 3, '2022-12-25 07:28:48', 1),
-(67, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-25 07:55:49', 1),
-(68, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-25 08:16:47', 1),
-(69, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-26 03:50:15', 1),
-(70, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-26 06:49:43', 1),
-(71, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-26 06:57:20', 1),
-(72, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-26 07:20:32', 1),
-(73, '::1', 'setyokecap@gmail.com', 3, '2022-12-26 07:35:59', 1),
-(74, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-26 07:36:35', 1),
-(75, '::1', 'setyokecap@gmail.com', 3, '2022-12-26 08:23:53', 1),
-(76, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-26 08:24:49', 1),
-(77, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-27 08:18:17', 1),
-(78, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-27 23:39:06', 1),
-(79, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-27 23:41:17', 1),
-(80, '::1', 'lugayamuktias', NULL, '2022-12-28 00:12:53', 0),
-(81, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-28 00:13:01', 1);
+(47, '::1', 'lugayamuktias', NULL, '2022-12-21 01:22:24', 0),
+(48, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-21 01:22:35', 1),
+(49, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-21 01:45:37', 1),
+(50, '::1', 'rifqikaruniaibadirachman.9a@gmail.com', 4, '2022-12-21 01:48:28', 1),
+(51, '::1', 'setyokecap@gmail.com', 3, '2022-12-21 02:08:04', 1),
+(52, '::1', 'setyokecap@gmail.com', 3, '2022-12-22 19:18:59', 1),
+(53, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-22 19:29:21', 1),
+(54, '::1', 'setyokecap@gmail.com', 3, '2022-12-22 19:30:40', 1),
+(55, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-22 19:32:46', 1),
+(56, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-23 02:57:05', 1),
+(57, '::1', 'lugayamuktias', NULL, '2022-12-23 07:25:56', 0),
+(58, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-23 07:26:19', 1),
+(59, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-25 07:25:10', 1),
+(60, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-28 07:20:50', 1),
+(61, '::1', 'setyokecap@gmail.com', 3, '2022-12-28 07:34:00', 1),
+(62, '::1', 'lugayamuktias', NULL, '2022-12-28 07:35:55', 0),
+(82, '::1', 'lugayamuktias', NULL, '2022-12-28 07:47:17', 0),
+(83, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-28 07:47:27', 1),
+(84, '::1', 'setyokecap@gmail.com', 3, '2022-12-28 10:16:59', 1),
+(85, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-28 10:36:19', 1),
+(86, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-28 11:11:44', 1),
+(87, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-28 18:08:33', 1),
+(88, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-28 20:24:45', 1),
+(89, '::1', 'setyokecap@gmail.com', 3, '2022-12-28 20:33:52', 1),
+(90, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-28 21:30:05', 1),
+(91, '::1', 'setyokecap@gmail.com', 3, '2022-12-28 23:34:53', 1),
+(92, '::1', 'lugayamuktias@gmail.com', 1, '2022-12-29 00:10:15', 1),
+(93, '::1', 'lugayamuktias@gmail.com', 1, '2023-01-03 03:09:44', 1),
+(94, '::1', 'lugayamuktias@gmail.com', 1, '2023-01-03 03:10:07', 1),
+(95, '::1', 'lugayamuktias@gmail.com', NULL, '2023-01-03 03:21:46', 0),
+(96, '::1', 'lugayamuktias@gmail.com', 1, '2023-01-03 03:21:55', 1),
+(97, '::1', 'lugayamuktias@gmail.com', 1, '2023-01-03 09:46:19', 1),
+(98, '::1', 'gheralnaza@gmail.com', 5, '2023-01-03 09:47:52', 1),
+(99, '::1', 'lugayamuktias@gmail.com', 1, '2023-01-03 09:48:50', 1),
+(100, '::1', 'setyokecap@gmail.com', 3, '2023-01-03 10:40:20', 1);
 
 -- --------------------------------------------------------
 
@@ -276,7 +281,7 @@ CREATE TABLE `detailevent` (
   `waktu_mulai` time NOT NULL,
   `durasi` int(10) NOT NULL,
   `batas_peserta` int(10) NOT NULL,
-  `type_event` varchar(30) NOT NULL,
+  `type_event` varchar(30) DEFAULT NULL,
   `gambar` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -287,7 +292,9 @@ CREATE TABLE `detailevent` (
 INSERT INTO `detailevent` (`id`, `nama_webinar`, `pembicara`, `topik_webinar`, `tanggal_mulai`, `waktu_mulai`, `durasi`, `batas_peserta`, `type_event`, `gambar`) VALUES
 (1, 'test123', 'test123', 'test123', '2022-12-21', '21:27:00', 5, 5, 'Gratis + sertifikat', ''),
 (3, 'asdasdasd', 'asdasdasd', 'sadsadasd', '2022-12-31', '17:53:00', 56, 59, 'Gratis (tanpa sertifikat)', ''),
-(4, 'sadasdsadasd', 'sadsadasdasdasd', '', '2022-12-31', '13:30:00', 51, 58, 'Gratis + sertifikat', '');
+(4, 'sadasdsadasd', 'sadsadasdasdasd', '', '2022-12-31', '13:30:00', 51, 58, 'Gratis + sertifikat', ''),
+(5, 'Seminar Software', 'H. Rizki', 'Membuat Perangkat Lunak', '2022-12-30', '22:00:00', 200, 300, 'Gratis + sertifikat', ''),
+(13, 'Keamanan3', 'Pak Dedi', 'Keamanan3', '2023-01-05', '23:33:00', 444, 444, 'Gratis (tanpa sertifikat)', 'Foto-Lugaya.jpg');
 
 -- --------------------------------------------------------
 
@@ -370,8 +377,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `email`, `username`, `password_hash`, `reset_hash`, `reset_at`, `reset_expires`, `activate_hash`, `status`, `status_message`, `active`, `force_pass_reset`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'lugayamuktias@gmail.com', 'lugayamuktias', '$2y$10$D61059pWSYsJ/GBcjQvFk.5Bty/ePeOVF89JGVjbjTdYwhrj6jFOq', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2022-12-13 21:02:07', '2022-12-13 21:02:07', NULL),
+(2, 'ryadhelmi@gmail.com', 'ryadhelmi', '$2y$10$ZHrEdAxZDTuji9o9M6Kc2uGr2GYjUdvfdp7Dde0A64GsYVHwlectC', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2022-12-13 21:45:42', '2022-12-13 21:45:42', NULL),
 (3, 'setyokecap@gmail.com', 'SetyoArie', '$2y$10$EJVVjDx.mPfE1Dm0xjJSe.MLrEgkAkNvKO5qT6NuzCNmDsWXn4A8S', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2022-12-14 07:05:45', '2022-12-14 07:05:45', NULL),
-(5, 'acephandika27@gmail.com', 'acephandika', '$2y$10$MTAbpcpdjhHIwjF7r3lCZu3TZhsl.eQteF.pjvbnbCXOlIaKMXFo2', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2022-12-21 01:52:47', '2022-12-21 01:52:47', NULL);
+(5, 'gheralnaza@gmail.com', 'gheralNaza', '$2y$10$R6xUw2b5QuQ6vvpBIY.s9edwXq.3qnNuPeoTauGr8Zaj5syJBUEg2', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2023-01-03 09:47:42', '2023-01-03 09:47:42', NULL);
 
 --
 -- Indexes for dumped tables
@@ -484,7 +492,7 @@ ALTER TABLE `auth_groups`
 -- AUTO_INCREMENT untuk tabel `auth_logins`
 --
 ALTER TABLE `auth_logins`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT untuk tabel `auth_permissions`
@@ -502,13 +510,13 @@ ALTER TABLE `auth_reset_attempts`
 -- AUTO_INCREMENT untuk tabel `auth_tokens`
 --
 ALTER TABLE `auth_tokens`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `detailevent`
 --
 ALTER TABLE `detailevent`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `migrations`

@@ -24,34 +24,34 @@
         </div>
     </nav>
 
+<?= form_open('Peserta/SimpanPeserta')?>
     <form action="">
         <div class="formWebinar">
-            <h1>Daftar Webinar</h1>
+            <h1>Daftar Peserta</h1>
             <div class="txtb">
                 <label>Nama :</label>
-                <input type="text" name="" value="" placeholder="Your Name">
+                <input type="text" name="namapeserta" value="" placeholder="Your Name">
             </div>
 
             <div class="txtb">
                 <label>Alamat:</label>
-                <input type="text" name="" value="" placeholder="Your Address">
+                <input type="text" name="alamat" value="" placeholder="Your Address">
             </div>
 
             <div class="txtb">
                 <label>Pekerjaan:</label>
-                <input type="text" name="" value="" placeholder="Your Job">
+                <input type="text" name="pekerjaan" value="" placeholder="Your Job">
             </div>
 
             <div class="column">
                 <div class="txtb">
                     <label>Tanggal Lahir :</label>
-                    <input type="date" name="tanggalMulai" value="" placeholder="">
+                    <input type="date" name="tanggalLahir" value="" placeholder="">
                 </div>
 
                 <div class="txtb">
                     <label>Nomer Handphone :</label>
-                    <input type="tel" name="noTelp" maxlength="13" size="13" placeholder="1234-5678-9101"
-                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    <input type="tel" name="noTelp" maxlength="13" size="13" placeholder="1234-5678-9101">
                 </div>
 
                 <div class="txtb">
@@ -69,28 +69,23 @@
 
             <div class="txtb">
                 <label>Kode Webinar :</label>
-                <input type="text" name="" value="" maxlength="5" size="5" placeholder="Code Webinar">
+                <input type="text" name="code" value="" maxlength="5" size="5" placeholder="Code Webinar">
             </div>
 
             <div class="txtb">
                 <label>Judul Webinar :</label>
-                <input list="daftarWebinar">
+                <input list="daftarWebinar" name="namawebinar">
                 <datalist id="daftarWebinar">
-                    <option value="Webinar 1">
-                    <option value="Webinar 2">
-                    <option value="Webinar 3">
-                    <option value="Webinar 4">
-                    <option value="Webinar 5">
                 </datalist>
             </div>
 
             <div class="btn">
                 <a href="<?= base_url('user/webinaruser');?>"><strong>Back</strong></a>
-                <a href="#"><strong>Daftar Webinar</strong></a>
+                 <button type="submit" name="Simpan"><strong>Submit</strong></button>
             </div>
         </div>
     </form>
-
+<?= form_close()?>
     <!-- Footer -->
     <!-- <footer>
         <div class="inner-widht">

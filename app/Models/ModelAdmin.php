@@ -9,6 +9,11 @@ class ModelAdmin extends Model{
     public function gettampildata(){
         return $this->findAll();
     }
+
+    public function hapusdata($idpeserta){
+        return $this->db->table('tbpeserta')->delete(['idpeserta' => $idpeserta]);
+
+    }
 }
 
 ?>
