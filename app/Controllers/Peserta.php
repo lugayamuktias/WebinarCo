@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\ModelTambahPeserta;
+use App\Models\ModelAdmin;
 class peserta extends BaseController{
     public function webinarpeserta()
     {
@@ -23,7 +24,8 @@ class peserta extends BaseController{
         return view('user/viewWebinar');
     }
     public function SimpanPeserta(){
-        $data2 = [
+        $data = [
+            'idpeserta' => $this->request->getPost('idpeserta'),
             'namapeserta' => $this->request->getPost('namapeserta'),
             'tgllahir' => $this->request->getPost('tanggalLahir'),
             'jeniskelamin' => $this->request->getPost('gender'),
@@ -36,9 +38,9 @@ class peserta extends BaseController{
 
         $addPeserta = new ModelTambahPeserta();
 
-        $simpan2 = $addPeserta->simpan($data2);
+        $simpan = $addPeserta->simpan($data);
         
-        if($simpan2){
+        if($simpan){
             return redirect()->to('/Peserta/TambahPeserta');
         }
     }

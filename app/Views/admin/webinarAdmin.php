@@ -52,7 +52,7 @@
 
                 <div class="webinars">
 
-                    <a href="<?= base_url('event/LihatWebinar');?>"><img src="/img/webinar2.jpg" alt=""
+                    <a href="<?= base_url('admin/LihatWebinarAdmin');?>"><img src="/img/webinar2.jpg" alt=""
                             class="picwebinar"></a>
 
                     <h4>Webinar 2</h4>
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="webinars">
-                    <a href="/"><img src="/img/webinar2.jpg" alt="" class="picwebinar"></a>
+                    <a href="<?= base_url('admin/LihatWebinarAdmin');?>"><img  src="/img/webinar2.jpg" alt="" class="picwebinar"></a>
 
                     <h4>Webinar 3</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum officiis incidunt fugit aut? Quod
@@ -84,6 +84,56 @@
         </div>
     </section>
 
+<!-- Tabel Webinar -->
+    <section id="kelolawebinar">
+        <div class="inner-widht">
+            <div class="title">
+                <h2>TABEL WEBINAR</h2>
+            </div>
+            <div class="table_responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Webinar</th>
+                            <th>Tanggal Lahir</th>
+                            <th>pembicara</th>
+                            <th>topik_webinar</th>
+                            <th>tanggal_mulai</th>
+                            <th>durasi</th>
+                            <th>batas_peserta</th>
+                            <th>type_event Webinar</th>
+                            <th>gambar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+				
+                        <?php 
+							$no=1;
+							foreach($detailevent as $row){ ?>
+                       <tr>
+                            <th><?= $row->id ?></th>
+                            <td><?= $row->nama_webinar ?></td>
+                            <td><?= $row->pembicara ?></td>
+                            <td><?= $row->topik_webinar ?></td>
+                            <td><?= $row->tanggal_mulai ?></td>
+                            <td><?= $row->durasi ?></td>
+                            <td><?= $row->batas_peserta ?></td>
+                            <td><?= $row->type_event ?></td>
+                            <td><?= $row->gambar ?></td>
+                            <td>
+                                <span class="action_btn">
+                                    <button type="button" onclick="window.location='<?= site_url('event/formedit/'.$row->id) ?>'">Edit</button>
+                                    <button type="button" onclick="remove('<?= $row->id ?>')">Remove</button>
+                                </span>
+                            </td>
+                        </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -94,7 +144,17 @@
         </div>
     </footer>
 
+    <script>
+        function remove(id) {
+            pesan = confirm('Apakah anda yakin?');
 
+            if (pesan) {
+                window.location.href = ("<?= site_url('event/removeWebinar/') ?>") +id;
+            } else {
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>

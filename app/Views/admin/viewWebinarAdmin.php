@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/css/detailWebinar.css">
-    <title>View Webinar Admin</title>
+    <title>Webinar Admin</title>
 </head>
 
 <body>
@@ -80,21 +80,21 @@
                         <?php 
 
 							$no=1;
-							foreach($tbpeserta as $row){ ?>
+							foreach($tbpeserta as $row2){ ?>
                        <tr>
-                            <th><?= $row->idpeserta ?></th>
-                            <td><?= $row->namapeserta ?></td>
-                            <td><?= $row->tgllahir ?></td>
-                            <td><?= $row->jeniskelamin ?></td>
-                            <td><?= $row->notelp ?></td>
-                            <td><?= $row->address ?></td>
-                            <td><?= $row->pekerjaan ?></td>
-                            <td><?= $row->idwebinar ?></td>
-                            <td><?= $row->namawebinar ?></td>
+                            <th><?= $row2->idpeserta ?></th>
+                            <td><?= $row2->namapeserta ?></td>
+                            <td><?= $row2->tgllahir ?></td>
+                            <td><?= $row2->jeniskelamin ?></td>
+                            <td><?= $row2->notelp ?></td>
+                            <td><?= $row2->address ?></td>
+                            <td><?= $row2->pekerjaan ?></td>
+                            <td><?= $row2->idwebinar ?></td>
+                            <td><?= $row2->namawebinar ?></td>
                             <td>
                                 <span class="action_btn">
                                     <a href="#">Edit</a>
-                                    <button type="button" onclick="remove('<?= $row->idpeserta ?>')">Remove</button>
+                                    <button type="button" onclick="remove('<?= $row2->idpeserta ?>')">Remove</button>
                                 </span>
                             </td>
                         </tr>
