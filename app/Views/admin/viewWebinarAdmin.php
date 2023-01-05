@@ -78,6 +78,7 @@
                     <tbody>
 				
                         <?php 
+
 							$no=1;
 							foreach($tbpeserta as $row2){ ?>
                        <tr>
