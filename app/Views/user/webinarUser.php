@@ -43,7 +43,7 @@
                         necessitatibus amet. Alias!</p>
 
                     <div class="buttons2">
-                        <a href="<?= base_url('peserta/daftarpeserta');?>"><strong>Daftar Webinar</strong></a>
+                        <a href="<?= base_url('peserta/TambahPeserta');?>"><strong>Daftar Webinar</strong></a>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
                         necessitatibus amet. Alias!</p>
 
                     <div class="buttons2">
-                        <a href="<?= base_url('peserta/daftarpeserta');?>"><strong>Daftar Webinar</strong></a>
+                        <a href="<?= base_url('peserta/TambahPeserta');?>"><strong>Daftar Webinar</strong></a>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@
                         necessitatibus amet. Alias!</p>
 
                     <div class="buttons2">
-                        <a href="<?= base_url('peserta/daftarpeserta');?>"><strong>Daftar Webinar</strong></a>
+                        <a href="<?= base_url('peserta/TambahPeserta');?>"><strong>Daftar Webinar</strong></a>
                     </div>
 
                 </div>
